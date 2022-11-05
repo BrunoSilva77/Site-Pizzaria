@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*style para body*/
+
+body {
+    padding: 0 12px;
+    font-family: arial;
+    margin: 0;
+    background-color: #fff8dc;
+}
+
+
+/*style para header/logo*/
+
+.header {
+    padding: 0;
+    position: relative;
+    margin: 0;
+    background-color: black;
+}
+
+
+/*style para title/h1*/
+
+.capa {
+    position: absolute;
+    bottom: 128px;
+    right: 100px;
+    font-size: 78px;
+    color: #006400;
+}
+
+
+/*style para image capa*/
+
+img {
+    width: 100%;
+    height: 420px;
+}
+
+
+/*style para o menu*/
+
+.nav-bar {
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    background: #006400;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: #ffd700 solid 1px;
+    z-index: 2;
+}
+
+
+/*style para links menu*/
+
+.nav-bar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*style para o menu, quando passar o mouse*/
+
+.nav-bar a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*style para o contéudo da page home*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*style para o contéudo da classe Main*/
+
+.main{
+    flex: 70%;
+    background-color: #fff8dc;
+    padding: 20px;
+}
+
+
+/*style para o titulo da page home*/
+
+h2{
+    text-align: center;
+    color: #006400;
+}
+
+
+/*style para o contéudo da classe Main*/
+
+.fakeimg{
+    width: 100%;
+    padding: 20px;
+    border: solid 5px green;
+}
+
+
+
+
+
+/*style para o rodapé*/
+
+.footer{
+    padding: 15px;
+    text-align: center;
+    background: #006400;
+    border-top: solid 3px #ffd700;
+    color: white;
+    height: 250px;
+    width: 100%;
+    font-style: bold;
+    text-align: center;
+}
+
+/*style para a lista do rodapé*/
+#info li{
+    color: #ffd700;
+    text-align: center;
+    list-style-type: none;
+    padding: 3px;
+}
+
+/*style para a lista do desenvolvedor*/
+.rod{
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+}
+
+
+/*style para a div que contém o titulo e a imagem da galeria*/
+
+.item{
+    text-align: center;
+    margin-left: 30px;
+}
+
+
+/*style para a div que contém a imagem da galeria*/
+
+.box-item{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin-right: 10px;
+    border: solid 3px green;
+    border-radius: 10%;
+}
+
+
+/*style para a imagem da galeria*/
+
+.item > img {
+    align-items: center;
+    width: 100%;
+    height: 170px;
+}
+
+
+/*style para o titulo h1 da galeria*/
+
+.tipo{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background-color: rgb(54, 6, 6);
+    height: 90px;
+    border-bottom: #ffd700 solid 3px;
+    border-top: #ffd700 solid 3px;
+
+}
+
+
+/*style de responsividade da page galeria*/
+
+@media screen and (max-width:600px) {
+    .capa{
+        position: absolute;
+        bottom: 168px;
+        right: 8px;
+        font-size: 35px;
+    }
+    .row, .nav-bar{
+        justify-content: end;
+    }
+    .rod{
+        font-size: 12px;
+    }
+}
